@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title> sample3</title>
+        <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
+        <script type="text/javascript" language="javascript">
+            $(document).ready(function(){
+                var title=$("p").attr("title");
+                $("#divid").text(title);
+                $("#myimg").attr("src","never.jpg")
+                $("div").click(function () { 
+                    $(this).replaceWith("<h1>JQuery is Great</h1>"); 
+                    });
+            });
+        </script>    
+    </head>
+    <body>
+        <div>
+            <p title="bold and brave"> 1st para</p>
+            <p id="myid"> 2nd para</p>
+            <div id = "divid"></div> 
+   
+        <img id="myimg" alt="sample">         
+    </div>
+    </body>
+</html>

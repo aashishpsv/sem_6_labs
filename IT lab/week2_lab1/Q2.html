@@ -1,0 +1,66 @@
+<html>
+<head>
+    <title>Question 2 - Simple Calculator</title>
+    <script src="C:\Users\IT\Desktop\210905200_arman\LAB1\jquery-3.7.1.min.js.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btnAdd").on('click', function () {
+                Add();
+            });
+            $("#btnSubstract").on('click', function () {
+                Substract();
+            })
+            $("#btnMultiply").on('click', function () {
+                Multiply();
+            })
+            $("#btnDivide").on('click', function () {
+                Divide();
+            })
+        });
+        
+    function Add()
+    {    
+        var no1=parseInt($("#txtNo1").val());    
+        var no2=parseInt($("#txtNo2").val());    
+        var result =no1+no2;    
+        alert("The result is "+result);    
+    }    
+    
+    function Substract()
+    {    
+        var no1=parseInt($("#txtNo1").val());    
+        var no2=parseInt($("#txtNo2").val());    
+        var result =no1-no2;    
+        alert("The result is "+result);    
+    }    
+    
+    function Multiply()
+    {    
+        var no1=parseInt($("#txtNo1").val());    
+        var no2=parseInt($("#txtNo2").val());    
+        var result =no1*no2;    
+        alert("The result is "+result);    
+    }    
+    
+    function Divide()
+    {    
+        var no1=parseInt($("#txtNo1").val());    
+        var no2=parseInt($("#txtNo2").val());
+        var result =no1/no2;    
+        alert("The result is "+result);    
+    }    
+
+</script>    
+</head>    
+
+<body>    
+    
+    First Number <input type="number" id="txtNo1" placeholder="Enter first number"><br>      
+    Second Number<input type="number" id="txtNo2" placeholder="Enter second number"><br>    
+    
+    <input type="button" id="btnAdd" value="Add">    
+    <input type="button" id="btnSubstract" value="Substract">    
+    <input type="button" id="btnMultiply" value="Multiply">    
+    <input type="button" id="btnDivide" value="Divide">    
+</body>    
+</html>  
