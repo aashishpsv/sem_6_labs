@@ -1,0 +1,62 @@
+2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 5/3
+1.6666666666666667
+>>> 5/3
+1.6666666666666667
+>>> 5/3
+1.6666666666666667
+>>> 6/2
+3.0
+>>> 2**3
+8
+>>> not True
+False
+>>> 0 == False
+True
+>>> 0 == False
+True
+>>> -5 != False
+True
+>>> bool(-8)
+True
+>>> 1 < 10
+True
+>>> 2 < 3 and 3<1
+False
+>>> a=[1,2,3,4]
+>>> b =a
+>>> b
+[1, 2, 3, 4]
+>>> b is a
+True
+>>> b is a
+True
+>>> b=[1,2,3,4]
+>>> b is a
+False
+>>> b == a
+True
+>>> "hello" + "world"
+'helloworld'
+>>> "hello"   "world"
+'helloworld'
+>>> len("helloworld")
+10
+>>> len("helloworld")
+10
+>>> name="jjj"
+>>> "her name is {name}"
+'her name is {name}'
+>>> f"her name is {name}"
+'her name is jjj'
+>>> etc is None
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'etc' is not defined
+>>> "etc" is None
+<stdin>:1: SyntaxWarning: "is" with a literal. Did you mean "=="?
+False
+>>> bool(0) or bool("") or bool([]) or bool({}) or bool(())
+False
+>>>
